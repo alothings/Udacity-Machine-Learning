@@ -1,0 +1,19 @@
+Accuracy vs Training Set Size
+=============================
+
+MORE DATA > FINE TUNED ALGORITHM
+
+Learned about Python pickle files. In this case it's a dictionary in which each value
+is also a dictionary (dictionary of dictionaries).
+
+Created functions to retrieve data quickly. Such as:
+
+- number_of_datapoints
+- number_of_features
+- poi_with_nan_total_payments
+- has_quantified_salary
+
+Important things to remember:
+
+Merging data from different sources can lead to bias when running
+a machine learning algorihtm.
