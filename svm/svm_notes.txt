@@ -1,0 +1,40 @@
+Support Vector Machine
+======================
+
+Parameters:
+- Kernel: Linear, rbf, sigmoid
+- C: Controls trade-off between smooth decision boundary and training points.
+    It works as a penalty parameter.
+    Large value of C = More training points correct.
+- Gamma: Kernel coefficient. If auto, then 1/n_features is used isntead.
+
+Non-linear Data
+===============
+
+Svm convers non-linear data using "kernel trick", to reach solution
+Takes low dimensional space and maps to very high dimensional space
+
+Not separable kernel turns into separable.
+Kernels in SVM, several come out of the box.
+- SVC is a type of kernel that comes out-of-the-box. It has several parameters.
+
+
+for instance:
+    from sklearn.svm import SVC
+    clf = SVC(kernel="linear")
+
+More Kernels:
+- Linear
+- Poly
+- RBF: Default, gives good non-linear approximation
+- Sigmoid
+
+Overfitting
+===========
+
+High Variance?
+
+
+
+
+

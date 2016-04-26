@@ -1,0 +1,19 @@
+Bayes
+=====
+P(C) = 0.01
+
+- Sensitivity: 90% test is positive if you have C (sensitive)
+
+- Specitivity: 90% test is negative if you don't have C (specific)
+
+Question: Test = Positive, Whats the Probability he/she have C
+
+P(A|B) = P(B|A)P(A) / P(B)
+
+
+Strengths
+=========
+- Easy to implement
+- It supports big feature spaces (thousands)
+
+- It can break (phrases that encompass multiple words can mess)

@@ -1,0 +1,55 @@
+Decision Tree Classification
+============================
+Goal: Maximize Information Gain
+- One of the most widely used machine learning algorithms.
+- Pretty scalable and easy to understand and implement.
+- Doesn't need much tweaking to obtain good results.
+- You can build ensemble classifiers from Decision Trees!!
+
+Cons:
+- Prone to overfitting
+
+Main difficulties in Machine Learning:
+- Missing Data and Overfitting
+
+Algorithm
+==========
+Construct and Search (like Legos)
+1. Each internal node tests a question.
+2. Each leave is a result/answer.
+
+Parameters
+==========
+- criterion: To choose splitting method. 'gini' for Gini Impurity and
+            'entropy' for Information Gain
+- splitter
+- max_depth
+- min_samples_split: Min value that is split, default is 2, make it higher to avoid overfit.
+- min_samples_leaf
+
+Entropy
+=======
+- Measure of impurity in data.
+In this case, controls how Decision Trees decides where to split the data.
+
+entropy = Sumi((-pi)*log2(pi))
+
+pi: fraction of examples in class i.
+
+Information Gain
+================
+- Entropy of parent minus weighted average of the entropy of the children if parent was split.
+
+IG = entropy(parent) - [weighted avg.]entropy(children)
+
+Decision tree goal: Maximize Information Gain.
+
+=========================================================================================
+Bias/Variance Trade-off
+=======================
+
+- Bias: Algorithm that practically ignores data. No capacity for learning anything.
+
+- Variance: Extremely perceptive to data. Only replicate stuff that it has seen before.
+
+
