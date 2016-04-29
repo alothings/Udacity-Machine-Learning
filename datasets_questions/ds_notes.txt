@@ -17,3 +17,9 @@ Important things to remember:
 
 Merging data from different sources can lead to bias when running
 a machine learning algorihtm.
+
+Cross Validation
+================
+
+Using sklearn.cross_validation train_test_split
+Automates splitting testing and training set.
