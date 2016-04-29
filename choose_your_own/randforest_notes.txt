@@ -1,0 +1,19 @@
+Random Forest
+=============
+
+- Is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset,
+and use averaging to improve the predictive accuracy and control over-fitting.
+
+
+
+Parameters
+==========
+
+- n_estimators: Number of trees in the forest (default 10)
+
+- criterion: For Decision Trees, it can be 'gini' or 'entropy'
+
+- min_samples_split: default is 2, choose 40 or more to avoid overfit.
+
+- max_features: the number of features to consider when looking for best split.
+

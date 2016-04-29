@@ -1,0 +1,36 @@
+Regressions and Sklearn
+=======================
+
+Generalized Linear Models:
+- OLS (Linear Regression)
+    Goal: Minimizing sum of squared errors (Sum(actual-predicted)^2)
+
+1. Import module for regression
+2. Create regression: reg = LinearRegression()
+3. Fit regression: reg.fit(training_input, training_output)
+4. Make Predictions!
+    - Notice: The input for regressions must be a list. reg.predict([list, items])
+
+5. Test the regression model:
+    - Run 'r-square score' on test set, and on training set.
+
+
+Linear Regression Errors
+========================
+
+error = actual_ y - predicted_y
+r-squared: answers "how much of my change in the output is explained by the
+                    change in my input"
+
+Other Algorithms:
+================
+
+- OLS
+- Gradient Descent
+
+Cross Validation
+================
+
+Using sklearn.cross_validation train_test_split
+Automates splitting testing and training set.
+

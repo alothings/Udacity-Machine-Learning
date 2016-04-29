@@ -1,0 +1,29 @@
+Adaboost Classifier
+===================
+
+- Is a meta estimator that begins by fitting a classifier on the original dataset, then fits additional copies of the
+classifier on the same dataset but where the weights of incorrectly classified instances are adjusted so that
+subsequent classifiers focus more on difficult cases.
+
+Principle: To fit a sequence of weak learners on repeatedly modified version of the data. The predictions from all
+of them are then combined through a weighted majority vote to produce a final prediction.
+
+- (Rand. Forest)Is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset,
+and use averaging to improve the predictive accuracy and control over-fitting.
+
+
+
+Parameters
+==========
+
+- base_estimator: It's the one which the boosted ensemble is built. Default: 'DecisionTreeClassifier'.
+                Support for sample weighting is required, as well as proper classes_ and n_classes_attributes.
+
+- n_estimators: Max number of estimators at which boosting is terminated. Default is 50. If perfect fit then stopped.
+(IMPORTANT)
+
+- learning_rate: Learning rate shrinks the contribution of each classifier by learning_rate.
+                Trade-off between learning_rate and n-estimators.
+
+- algorithm: Default: 'SAMME.R', also SAMME.
+

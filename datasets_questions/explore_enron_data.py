@@ -35,7 +35,7 @@ def number_of_features():
         count += 1
         print feature
     return count
-# print number_of_features()
+print number_of_features()
 
 
 def number_of_poi():
@@ -100,4 +100,4 @@ def poi_with_nan_total_payments():
                         enron_data[person]["poi"] == 1:
             count += 1
     return count
-print poi_with_nan_total_payments()
+# print poi_with_nan_total_payments()
